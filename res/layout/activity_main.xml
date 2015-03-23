@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:arc="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <ListView 
+        android:id="@+id/id_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.example.arcmenu.ArcMenu
+        android:id="@+id/id_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        arc:position="right_bottom"
+        arc:radius="150dp" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/composer_button" >
+
+            <ImageView
+                android:id="@+id/id_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:layout_centerInParent="true"
+                android:src="@drawable/composer_icn_plus"/>
+        </RelativeLayout>
+        
+        <ImageView 
+            android:id="@+id/id_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/composer_camera"
+            android:tag="Camera"/>
+        
+        <ImageView 
+            android:id="@+id/id_music"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/composer_music"
+            android:tag="Music"/>
+        
+        <ImageView 
+            android:id="@+id/id_place"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/composer_place"
+            android:tag="Place"/>
+        
+        <ImageView 
+            android:id="@+id/id_sleep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/composer_sleep"
+            android:tag="Sleep"/>
+        
+        <ImageView 
+            android:id="@+id/id_sun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/composer_thought"
+            android:tag="Sun"/>
+    </com.example.arcmenu.ArcMenu>
+
+</RelativeLayout>
